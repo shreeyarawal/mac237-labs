@@ -1,0 +1,12 @@
+token: 310f6e15b051ef25  seed: 823094805
+trials 100000, loss years 14708 (14.7 percent)
+mean annual loss       $5,642
+median annual loss     $0
+p90 of all years       $26,369
+p90 of loss years only $65,829
+loss exceedance
+  P(annual loss > $      0) =  0.147
+  P(annual loss > $ 10,000) =  0.144
+  P(annual loss > $ 25,000) =  0.104
+  P(annual loss > $ 50,000) =  0.040
+  P(annual loss > $ 75,000) =  0.006
