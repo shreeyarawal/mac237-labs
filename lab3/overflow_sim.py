@@ -1,17 +1,17 @@
 import sys
 
-def simulate_overflow():
-    print("[*] Starting MAC237 Buffer Overflow Simulation...")
+def simulate_overflow(size=80):
     buffer = [0] * 64
-    print(f"[*] Allocated safe stack buffer of {len(buffer)} bytes.")
-    
-    # Simulate data input
-    payload = "A" * 80
-    print(f"[*] Attempting to write payload of size {len(payload)} bytes...")
-    
+    payload = "A" * size
+
+    print(f"Buffer capacity: {len(buffer)}")
+    print(f"Payload size: {len(payload)}")
+
     if len(payload) > len(buffer):
-        print("[!] Warning: Potential stack overflow detected in simulation!")
-        print("[+] Boundary check triggered safely. Simulation successful.")
+        print("WARNING: Potential buffer overflow detected!")
+    else:
+        print("SAFE: Payload is within buffer capacity.")
 
 if __name__ == "__main__":
-    simulate_overflow()
+    size = int(sys.argv[1]) if len(sys.argv) > 1 else 80
+    simulate_overflow(size)
