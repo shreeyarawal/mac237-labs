@@ -1,0 +1,9 @@
+Program: lab3/overflow_sim.py (Lab 3, Session 8)
+
+Phase          | Score 0-3 | Evidence
+Requirements   | 1 | Overflow detection was the goal, but I have no written requirements to show.
+Design         | 1 | The program checks the payload length against the buffer capacity.
+Implementation | 2 | I used a length check to detect potential overflow safely.
+Verification   | 2 | The 80-character payload triggered the expected warning.
+Release        | 1 | The program was committed to GitHub, but no release checks have been verified.
+Total          | 7 of 15  |
