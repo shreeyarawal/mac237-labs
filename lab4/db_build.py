@@ -1,5 +1,5 @@
 import sqlite3
-TOKEN = 'PASTE_YOUR_TOKEN_HERE'
+TOKEN = '310f6e15b051ef25'
 db = sqlite3.connect('lab4.db')
 db.executescript('''
 DROP VIEW IF EXISTS employees_public;
